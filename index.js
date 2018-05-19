@@ -14,18 +14,13 @@ function nowServing(katzDeliLine) {
   }
 }
 
-function currentLine(katzDeliLine) {
-  let mine = [];
-  if(katzDeliLine.length > 0) {
-    for(let i = 0; i < katzDeliLine.length; i++) {
-      if(i === 0) {
-        mine.push(i + 1 + '. ' + katzDeliLine[i])
-      } else {
-      mine.push(' ' + (i + 1) + '. ' + katzDeliLine[i])
-      }
-    }
-    return "The line is currently: " + [...mine];
-  } else {
+function currentLine(line) {
+  if(line.length < 1) {
     return "The line is currently empty."
+  } 
+  var nameNum = [];
+  for (var i = 0; i < line.length; i++) {
+    nameNum.push(`${i + 1}. ${line[i]}`);
   }
+    return `The line is currently: ${nameNum.join(', ')}`
 }
