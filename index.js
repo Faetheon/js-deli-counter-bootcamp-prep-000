@@ -20,8 +20,9 @@ function currentLine(katzDeliLine) {
     for(let i = 0; i < katzDeliLine.length; i++) {
       if(katzDeliLine === 0) {
         mine.push(i + 1 + '. ' + katzDeliLine[i])
-      }
+      } else {
       mine.push(' ' + (i + 1) + '. ' + katzDeliLine[i])
+      }
     }
     return "The line is currently: " + [...mine];
   } else {
