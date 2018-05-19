@@ -17,7 +17,7 @@ function nowServing(katzDeliLine) {
 function currentLine(katzDeliLine) {
   var mine = [];
   if(katzDeliLine.length > 0) {
-    for(i = 0; i < katzDeliLine.length; i++) {
+    for(var i = 0; i < katzDeliLine.length; i++) {
       mine.push(i+1)
       mine.push('. ' + katzDeliLine[i]);
     }
