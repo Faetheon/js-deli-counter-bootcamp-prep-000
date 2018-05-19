@@ -1,4 +1,4 @@
-var katzDeli = [];
+let katzDeli = [];
 
 function takeANumber(katzDeliLine, name) {
   katzDeliLine.push(name);
@@ -15,9 +15,9 @@ function nowServing(katzDeliLine) {
 }
 
 function currentLine(katzDeliLine) {
-  var mine = [];
+  let mine = [];
   if(katzDeliLine.length > 0) {
-    for(var i = 0; i < katzDeliLine.length; i++) {
+    for(let i = 0; i < katzDeliLine.length; i++) {
       mine.push(i+1)
       mine.push('. ' + katzDeliLine[i]);
     }
