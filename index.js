@@ -21,7 +21,7 @@ function currentLine(katzDeliLine) {
       mine.push(i+1)
       mine.push('. ' + katzDeliLine[i]);
     }
-    
+    mine.toString();
     return "The line is currently: " + [...mine];
   } else {
     return "The line is currently empty."
