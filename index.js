@@ -20,7 +20,6 @@ function currentLine(katzDeliLine) {
     for(let i = 0; i < katzDeliLine.length; i++) {
       mine.push(i+1, '. ' + katzDeliLine[i])
     }
-    mine.toString();
     return "The line is currently: " + mine;
   } else {
     return "The line is currently empty."
